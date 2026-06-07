@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "turboquant"
+version = "0.1.0"
+description = "Reference implementation of TurboQuant quantizers"
+readme = "README.md"
+requires-python = ">=3.13"
+license = { text = "MIT" }
+authors = [
+  { name = "OpenAI Codex" }
+]
+dependencies = [
+  "numpy>=2.2",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3",
+  "matplotlib>=3.10",
+]
+bench = [
+  "faiss-cpu>=1.13.0",
+  "h5py>=3.14",
+  "pandas>=2.3",
+  "datasets>=4.1.1",
+  "huggingface_hub>=0.34",
+]
+torch = [
+  "torch>=2.8",
+]
+embed = [
+  "torch>=2.9",
+  "sentence-transformers>=5.1",
+]
+
+[project.scripts]
+precompute-codebooks = "turboquant.cli:main"
+validate-distortion = "turboquant.cli:main"
+benchmark-nn = "turboquant.cli:main"
+prepare-synthetic = "turboquant.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

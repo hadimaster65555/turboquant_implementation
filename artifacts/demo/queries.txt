@@ -1,0 +1,3 @@
+How does TurboQuant reduce vector compression error?
+What baseline is commonly used in vector search?
+Why would I use a small embedding model for testing?

@@ -1,0 +1,5 @@
+[console_scripts]
+benchmark-nn = turboquant.cli:main
+precompute-codebooks = turboquant.cli:main
+prepare-synthetic = turboquant.cli:main
+validate-distortion = turboquant.cli:main

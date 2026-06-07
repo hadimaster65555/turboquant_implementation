@@ -1,0 +1,8 @@
+TurboQuant compresses high-dimensional vectors with randomized rotation and scalar quantization.
+Nearest-neighbor retrieval uses inner products between query embeddings and database embeddings.
+Residual quantization with a one-bit QJL stage reduces bias in inner-product estimation.
+Product quantization is a common baseline for approximate nearest-neighbor search.
+Sentence embeddings map text into dense vectors that preserve semantic similarity.
+Smaller embedding models are useful for quick local experiments before scaling up to larger datasets.
+Random rotations can make coordinate distributions easier to quantize uniformly across inputs.
+Vector databases often trade indexing speed, memory footprint, and recall against each other.

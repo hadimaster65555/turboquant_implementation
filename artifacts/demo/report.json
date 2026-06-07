@@ -1,0 +1,85 @@
+{
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_seconds": 12.960148040991044,
+  "database_shape": [
+    8,
+    384
+  ],
+  "query_shape": [
+    3,
+    384
+  ],
+  "documents_count": 8,
+  "queries_count": 3,
+  "documents_preview": [
+    "TurboQuant compresses high-dimensional vectors with randomized rotation and scalar quantization.",
+    "Nearest-neighbor retrieval uses inner products between query embeddings and database embeddings.",
+    "Residual quantization with a one-bit QJL stage reduces bias in inner-product estimation.",
+    "Product quantization is a common baseline for approximate nearest-neighbor search.",
+    "Sentence embeddings map text into dense vectors that preserve semantic similarity.",
+    "Smaller embedding models are useful for quick local experiments before scaling up to larger datasets.",
+    "Random rotations can make coordinate distributions easier to quantize uniformly across inputs.",
+    "Vector databases often trade indexing speed, memory footprint, and recall against each other."
+  ],
+  "queries_preview": [
+    "How does TurboQuant reduce vector compression error?",
+    "What baseline is commonly used in vector search?",
+    "Why would I use a small embedding model for testing?"
+  ],
+  "results": [
+    {
+      "bits": 2,
+      "storage": {
+        "turboquant_bytes": 832
+      },
+      "methods": {
+        "turboquant": {
+          "1": 1.0,
+          "2": 1.0,
+          "4": 1.0
+        },
+        "pq": {
+          "1": 1.0,
+          "2": 1.0,
+          "4": 1.0
+        }
+      },
+      "timings": {
+        "turboquant": {
+          "quantize_seconds": 0.008340790998772718,
+          "score_seconds": 0.001521583995781839
+        },
+        "pq": {
+          "quantize_seconds": 1.2626419589942088,
+          "score_seconds": 0.0
+        }
+      }
+    },
+    {
+      "bits": 4,
+      "storage": {
+        "turboquant_bytes": 1600
+      },
+      "methods": {
+        "turboquant": {
+          "1": 1.0,
+          "2": 1.0,
+          "4": 1.0
+        },
+        "pq": {
+          "skipped": "PQ requires at least 16 training vectors for 4-bit codebooks; got 8"
+        }
+      },
+      "timings": {
+        "turboquant": {
+          "quantize_seconds": 0.008629250005469657,
+          "score_seconds": 0.0016222499980358407
+        },
+        "pq": {
+          "quantize_seconds": 0.0,
+          "score_seconds": 0.0
+        }
+      }
+    }
+  ]
+}

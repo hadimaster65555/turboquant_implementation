@@ -1,0 +1,100 @@
+{
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_seconds": 5.537540457997238,
+  "database_shape": [
+    500,
+    384
+  ],
+  "query_shape": [
+    100,
+    384
+  ],
+  "documents_count": 500,
+  "queries_count": 100,
+  "documents_preview": [
+    "Wall St. Bears Claw Back Into the Black (Reuters) Reuters - Short-sellers, Wall Street's dwindling\\band of ultra-cynics, are seeing green again.",
+    "Carlyle Looks Toward Commercial Aerospace (Reuters) Reuters - Private investment firm Carlyle Group,\\which has a reputation for making well-timed and occasionally\\controversial plays in the defense industry, has quietly placed\\its bets on another part of the market.",
+    "Oil and Economy Cloud Stocks' Outlook (Reuters) Reuters - Soaring crude prices plus worries\\about the economy and the outlook for earnings are expected to\\hang over the stock market next week during the depth of the\\summer doldrums.",
+    "Iraq Halts Oil Exports from Main Southern Pipeline (Reuters) Reuters - Authorities have halted oil export\\flows from the main pipeline in southern Iraq after\\intelligence showed a rebel militia could strike\\infrastructure, an oil official said on Saturday.",
+    "Oil prices soar to all-time record, posing new menace to US economy (AFP) AFP - Tearaway world oil prices, toppling records and straining wallets, present a new economic menace barely three months before the US presidential elections.",
+    "Stocks End Up, But Near Year Lows (Reuters) Reuters - Stocks ended slightly higher on Friday\\but stayed near lows for the year as oil prices surged past #36;46\\a barrel, offsetting a positive outlook from computer maker\\Dell Inc. (DELL.O)",
+    "Money Funds Fell in Latest Week (AP) AP - Assets of the nation's retail money market mutual funds fell by #36;1.17 billion in the latest week to #36;849.98 trillion, the Investment Company Institute said Thursday.",
+    "Fed minutes show dissent over inflation (USATODAY.com) USATODAY.com - Retail sales bounced back a bit in July, and new claims for jobless benefits fell last week, the government said Thursday, indicating the economy is improving from a midsummer slump.",
+    "Safety Net (Forbes.com) Forbes.com - After earning a PH.D. in Sociology, Danny Bazil Riley started to work as the general manager at a commercial real estate firm at an annual base salary of #36;70,000. Soon after, a financial planner stopped by his desk to drop off brochures about insurance benefits available through his employer. But, at 32, \"buying insurance was the furthest thing from my mind,\" says Riley.",
+    "Wall St. Bears Claw Back Into the Black NEW YORK (Reuters) - Short-sellers, Wall Street's dwindling band of ultra-cynics, are seeing green again."
+  ],
+  "queries_preview": [
+    "Fears for T N pension after talks Unions representing workers at Turner Newall say they are 'disappointed' after talks with stricken parent firm Federal Mogul.",
+    "The Race is On: Second Private Team Sets Launch Date for Human Spaceflight (SPACE.com) SPACE.com - TORONTO, Canada -- A second\\team of rocketeers competing for the #36;10 million Ansari X Prize, a contest for\\privately funded suborbital space flight, has officially announced the first\\launch date for its manned rocket.",
+    "Ky. Company Wins Grant to Study Peptides (AP) AP - A company founded by a chemistry researcher at the University of Louisville won a grant to develop a method of producing better peptides, which are short chains of amino acids, the building blocks of proteins.",
+    "Prediction Unit Helps Forecast Wildfires (AP) AP - It's barely dawn when Mike Fitzpatrick starts his shift with a blur of colorful maps, figures and endless charts, but already he knows what the day will bring. Lightning will strike in places he expects. Winds will pick up, moist places will dry and flames will roar.",
+    "Calif. Aims to Limit Farm-Related Smog (AP) AP - Southern California's smog-fighting agency went after emissions of the bovine variety Friday, adopting the nation's first rules to reduce air pollution from dairy cow manure.",
+    "Open Letter Against British Copyright Indoctrination in Schools The British Department for Education and Skills (DfES) recently launched a \"Music Manifesto\" campaign, with the ostensible intention of educating the next generation of British musicians. Unfortunately, they also teamed up with the music industry (EMI, and various artists) to make this popular. EMI has apparently negotiated their end well, so that children in our schools will now be indoctrinated about the illegality of downloading music.The ignorance and audacity of this got to me a little, so I wrote an open letter to the DfES about it. Unfortunately, it's pedantic, as I suppose you have to be when writing to goverment representatives. But I hope you find it useful, and perhaps feel inspired to do something similar, if or when the same thing has happened in your area.",
+    "Loosing the War on Terrorism \\\\\"Sven Jaschan, self-confessed author of the Netsky and Sasser viruses, is\\responsible for 70 percent of virus infections in 2004, according to a six-month\\virus roundup published Wednesday by antivirus company Sophos.\"\\\\\"The 18-year-old Jaschan was taken into custody in Germany in May by police who\\said he had admitted programming both the Netsky and Sasser worms, something\\experts at Microsoft confirmed. (A Microsoft antivirus reward program led to the\\teenager's arrest.) During the five months preceding Jaschan's capture, there\\were at least 25 variants of Netsky and one of the port-scanning network worm\\Sasser.\"\\\\\"Graham Cluley, senior technology consultant at Sophos, said it was staggeri ...\\\\",
+    "FOAFKey: FOAF, PGP, Key Distribution, and Bloom Filters \\\\FOAF/LOAF and bloom filters have a lot of interesting properties for social\\network and whitelist distribution.\\\\I think we can go one level higher though and include GPG/OpenPGP key\\fingerpring distribution in the FOAF file for simple web-of-trust based key\\distribution.\\\\What if we used FOAF and included the PGP key fingerprint(s) for identities?\\This could mean a lot. You include the PGP key fingerprints within the FOAF\\file of your direct friends and then include a bloom filter of the PGP key\\fingerprints of your entire whitelist (the source FOAF file would of course need\\to be encrypted ).\\\\Your whitelist would be populated from the social network as your client\\discovered new identit ...\\\\",
+    "E-mail scam targets police chief Wiltshire Police warns about \"phishing\" after its fraud squad chief was targeted.",
+    "Card fraud unit nets 36,000 cards In its first two years, the UK's dedicated card fraud unit, has recovered 36,000 stolen cards and 171 arrests - and estimates it saved 65m."
+  ],
+  "results": [
+    {
+      "bits": 2,
+      "storage": {
+        "turboquant_bytes": 52000
+      },
+      "methods": {
+        "turboquant": {
+          "1": 0.7,
+          "4": 0.99,
+          "8": 1.0,
+          "16": 1.0
+        },
+        "pq": {
+          "1": 0.83,
+          "4": 1.0,
+          "8": 1.0,
+          "16": 1.0
+        }
+      },
+      "timings": {
+        "turboquant": {
+          "quantize_seconds": 0.15456904099846724,
+          "score_seconds": 0.09521349999704398
+        },
+        "pq": {
+          "quantize_seconds": 0.07820991599874105,
+          "score_seconds": 0.0
+        }
+      }
+    },
+    {
+      "bits": 4,
+      "storage": {
+        "turboquant_bytes": 100000
+      },
+      "methods": {
+        "turboquant": {
+          "1": 0.9,
+          "4": 1.0,
+          "8": 1.0,
+          "16": 1.0
+        },
+        "pq": {
+          "1": 0.94,
+          "4": 1.0,
+          "8": 1.0,
+          "16": 1.0
+        }
+      },
+      "timings": {
+        "turboquant": {
+          "quantize_seconds": 0.1546474170027068,
+          "score_seconds": 0.094014625006821
+        },
+        "pq": {
+          "quantize_seconds": 0.0776275409880327,
+          "score_seconds": 0.0
+        }
+      }
+    }
+  ]
+}
